@@ -17,8 +17,6 @@ title: 插件demo
 import tinymce from "tinymce";
 import "tinymce-plugin";
 import TinymceVue from "@tinymce-plugin/tinymce-vue";
-import "@npkg/tinymce-plugin/plugins/tpLayout/plugin.js";
-import "@npkg/tinymce-plugin/plugins/tpLayout/langs/i18n.json";
 export default{
 name: 'domeVue3',
 components: { TinymceVue },
@@ -34,7 +32,6 @@ data(){
                  menu: {
                     mymenubar: {title: 'Extension', items: 'tpLayout tpI18n' },
                 },
-                
                 base_url:'/tinymce',
                 plugins: 'code tpLayout preview autoresize',
                 toolbar: 'code tpLayout preview',
