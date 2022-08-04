@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "esnext",
+    "importHelpers": true,
+    "lib": ["esnext"],
+    "declaration": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@tinymce-plugin/tp-layout",
+  "private": false,
+  "version": "0.0.1",
+  "module": "./index.js",
+  "browser": "./dist/plugin.min.js",
+  "unpkg": "./dist/plugin.min.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:tsc": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "build:docs": "vite --config docs-config.ts",
+    "docs:init": "cd ./node_modules/@tinymce-plugin/build-docs/ &&npm install",
+    "t2": "cd ./node_modules/@tinymce-plugin/build-docs/ &&yarn add ./tinymce-plugin",
+    "rt2": "cd ./node_modules/@tinymce-plugin/build-docs/ &&yarn remove tinymce-plugin",
+    "docs": "cd ./node_modules/@tinymce-plugin/build-docs/&& yarn dev",
+    "i18n": "node ./src/i18n/i18n-api.js"
+  },
+  "author": "Five(Li Hailong)",
+  "license": "Apache-2.0",
+  "description": "一键排版",
+  "dependencies": {
+    "@tinymce-plugin/vite-build": "^0.0.4",
+    "vue": "^3.2.25"
+  },
+  "files": [
+    "dist",
+    "__docs__",
+    "demo"
+  ],
+  "homepage": "https://github.com/tinymce-plugin/tp-layout",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@tinymce-plugin/build-docs": "^0.0.1",
+    "@types/node": "^17.0.23",
+    "tinymce": "5.8.2",
+    "tinymce-plugin": "^0.0.3-beta.20",
+    "ts-morph": "^14.0.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "2.9.1",
+    "vue-tsc": "^0.29.8"
+  }
+}

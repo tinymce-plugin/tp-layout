@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/87648636?s=60&v=4" type="image/x-icon">
+    <title>Tinymce-plugin</title>
+    <style>
+      .open-plugin{
+        width:150px;
+        height: 30px;
+        display: flex;
+        padding: 0px 10px;
+        background-color:rgb(27, 79, 234);
+        border-radius:5px;
+        color:white;
+        font-size:0;
+        text-align:center;
+        cursor:pointer;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-items: center;
+      }
+      .open-plugin img{
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+      .open-plugin span{
+        display: inline-block;
+        height:20px;
+        line-height:20px;
+        vertical-align: middle;
+        margin-left:10px;
+        font-size:14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <textarea class="tinymce">
+        <p>这是一个插件测试</p>
+      </textarea>
+    </div>
+    <div style="height: 60px;"></div>
+    <div id="tinymce-app2">
+      <div class="tinymce-box" style="color: #000;">
+          <div class="tinymce-cnt" id="mytextarea">
+            <p>This is the initial content of the editor</p>
+          </div>
+      </div>
+      </div>
+      <div>
+        <p></p>
+        <a onclick="openPlugin()" class="open-plugin"  title="点击调用触发插件" ><img  src="https://avatars.githubusercontent.com/u/87648636?s=60&v=4" alt=""><span>点击调用触发插件</span></a>
+      </div>
+    <script>
+    //   createSkeleton({   
+    //      selector: 'textarea.tinymce',
+    //      menu: {
+    //           mymenubar: {title: 'Extension', items: `tpImportword` },
+    //      },
+    //     min_height:240,
+    //     plugins: `code tpImportword`,
+    //     toolbar: `code  tpImportword`,
+    //  })
+    //  createSkeleton({   
+    //      selector: 'div#mytextarea',
+    //      menu: {
+    //           mymenubar: {title: 'Extension', items: `tpImportword` },
+    //      },
+    //     min_height:240,
+    //     plugins: `code tpImportword`,
+    //     toolbar: `code  tpImportword`,
+    //  })
+    </script>
+    <script type="module" src="/demo/demo.ts"></script>
+  </body>
+</html>
